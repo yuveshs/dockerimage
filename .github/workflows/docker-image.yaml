@@ -37,5 +37,5 @@ jobs:
           context: .
           push: true
           tags: |
-            mano2102/docker-images:latest
-            mano2102/docker-images:${{ env.SHORT_SHA }}
+            yuveshs/cicd_docker:latest
+            yuveshs/cicd_docker:${{ env.SHORT_SHA }}
