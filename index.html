@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mano - Simple HTML App</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg,#f6f8ff,#eef7f1);
+      color: #0f172a;
+      padding: 2rem;
+    }
+    .card {
+      max-width: 900px;
+      width: 100%;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 30px rgba(16,24,40,0.08);
+      padding: 2rem;
+      text-align: center;
+    }
+    h1 { margin: 0 0 0.5rem; font-size: 1.75rem; }
+    p.lead { margin: 0 0 1.25rem; color: #475569; }
+    .meta { margin-top: 1rem; font-size: .9rem; color: #64748b; }
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: .6rem 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      border: 1px solid #0ea5a4;
+      color: #064e4e;
+    }
+    footer { margin-top: 1.5rem; font-size: .8rem; color: #94a3b8; }
+    code { background:#f1f5f9; padding:.15rem .4rem; border-radius:6px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Welcome — Mano's Static HTML</h1>
+    <p class="lead">This is a minimal, production-ready static HTML file intended to be served by Nginx or any static server.</p>
+
+    <p>
+      Example repo: <code>mano2102/docker-images</code>
+    </p>
+
+    <a class="btn" href="#" onclick="alert('Deployed via CI ✅')">Test button</a>
+
+    <div class="meta">
+      Built at: <span id="builtAt">—</span>
+    </div>
+
+    <footer>
+      Served by Nginx · Simple static page for CI / Docker demonstration
+    </footer>
+  </div>
+
+  <script>
+    // friendly built time display (local)
+    document.getElementById('builtAt').textContent = new Date().toLocaleString();
+  </script>
+</body>
+</html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mano - Simple HTML App</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg,#f6f8ff,#eef7f1);
+      color: #0f172a;
+      padding: 2rem;
+    }
+    .card {
+      max-width: 900px;
+      width: 100%;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 30px rgba(16,24,40,0.08);
+      padding: 2rem;
+      text-align: center;
+    }
+    h1 { margin: 0 0 0.5rem; font-size: 1.75rem; }
+    p.lead { margin: 0 0 1.25rem; color: #475569; }
+    .meta { margin-top: 1rem; font-size: .9rem; color: #64748b; }
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: .6rem 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      border: 1px solid #0ea5a4;
+      color: #064e4e;
+    }
+    footer { margin-top: 1.5rem; font-size: .8rem; color: #94a3b8; }
+    code { background:#f1f5f9; padding:.15rem .4rem; border-radius:6px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Welcome — Mano's Static HTML</h1>
+    <p class="lead">This is a minimal, production-ready static HTML file intended to be served by Nginx or any static server.</p>
+
+    <p>
+      Example repo: <code>mano2102/docker-images</code>
+    </p>
+
+    <a class="btn" href="#" onclick="alert('Deployed via CI ✅')">Test button</a>
+
+    <div class="meta">
+      Built at: <span id="builtAt">—</span>
+    </div>
+
+    <footer>
+      Served by Nginx · Simple static page for CI / Docker demonstration
+    </footer>
+  </div>
+
+  <script>
+    // friendly built time display (local)
+    document.getElementById('builtAt').textContent = new Date().toLocaleString();
+  </script>
+</body>
+</html>
